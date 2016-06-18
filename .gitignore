@@ -1,0 +1,8 @@
+
+.DS_STORE
+.Python
+*.py[cod]
+/static_in_env
+/static_in_pro
+/images
+db.sqlite3
