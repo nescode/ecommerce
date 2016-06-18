@@ -14,7 +14,7 @@
 .jumbotron {
 	background-color:#5ACDFF;
 	color: #000;
-	{% if featured_image.make_image_background %} 
+	{% if featured_image.make_image_background %}
 	background-image: url("{{ featured_image.image.url }}");
 	background-repeat: no-repeat;
 	background-color: #000;
@@ -27,7 +27,7 @@
 </style>
 
 
-     
+
 {% block jumbotron %}
 
 	{% if featured_image %}
@@ -41,7 +41,7 @@
 				<a class="btn btn-lg btn-primary" href="{{ featured_image.product.get_absolute_url }}" role="button">More Details </a>
 				</p>
 				</div>
-				{% if not featured_image.make_image_background %} 
+				{% if not featured_image.make_image_background %}
 				<div class='col-sm-6' >
 					<img src="{{ featured_image.image.url }}" class='img-responsive' />
 		 		</div>
@@ -56,14 +56,14 @@
 	 <div class="container">
 		<div class="row">
 			<div class='col-sm-6'>
-			<h1>Try Django 1.8</h1>
-			<p>The MVP Landing project is designed to get your project started. The goal is to help you launch as soon as possible with the least amount of investment using time or money. Join Us today.</p>
+			<h1>Hello Django</h1>
+			<p> Django framework.</p>
 			<p>
 			<a class="btn btn-lg btn-primary" href="" role="button">Join Us &raquo;</a>
 			</p>
 			</div>
 			<div class='col-sm-6' >
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/2uLYO1LUf6Q" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="#" frameborder="0" allowfullscreen></iframe>
 
 	 		</div>
 			</div>
@@ -93,7 +93,7 @@
 </div>
 
 
-<!-- 
+<!--
  {% if request.user.is_authenticated %}
 <h1>You are logged in!</h1>
 
@@ -114,7 +114,7 @@
 <div class="row">
 
   <div class="col-sm-3 pull-right">
-  	
+
 			<p class='lead text-align-center'>{{ title }}</p>
 
 			<form method='POST' action=''>{% csrf_token %}
@@ -131,7 +131,7 @@
 </div>
 
 <div class='col-sm-3'>
-<p class='lead text-align-center'>Created for Starters 
+<p class='lead text-align-center'>Created for Starters
 <br/>
 <span class='fa-stack fa-lg fa-5x'>
 <i class='fa fa-comment-o fa-stack-2x'></i>
