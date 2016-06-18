@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>{% block head_title %}eCommerce 2{% endblock %}</title>
+    <title>{% block head_title %}ECommerce Platform{% endblock %}</title>
 
     {% include 'head_css.html' %}
 
@@ -40,21 +40,21 @@
 {% endif %}
 
 {% block jumbotron %}
-          
+
             {% endblock %}
     <div class="container">
-            
 
-          
+
+
             {% block content %}
 
             {% endblock %}
-              
+
 
     </div> <!-- /container -->
 
     {% include "javascript.html" %}
-    
+
     <script>
     $(document).ready(function(){
         {% block jquery %}
@@ -62,22 +62,6 @@
     });
 
     </script>
-    
+
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
